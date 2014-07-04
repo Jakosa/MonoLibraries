@@ -5,7 +5,7 @@ EXTRA_DIST =
 
 if ENABLE_DEBUG
 ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize- "-nowarn:1699,618,612,1699,1030,1635,1717,414" -debug "-define:DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0"
+ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize- "-nowarn:1699,618,612,1699,1030,1635,1717,414,649" -debug "-define:DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0"
 ASSEMBLY = ../bin/Debug/Mono.Libraries.dll
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
 COMPILE_TARGET = library
@@ -19,7 +19,7 @@ endif
 
 if ENABLE_RELEASE
 ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize+ "-nowarn:1699,618,612,1699,1030,1635,1717,414" "-define:NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0"
+ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize+ "-nowarn:1699,618,612,1699,1030,1635,1717,414,649" "-define:NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0"
 ASSEMBLY = ../bin/Release/Mono.Libraries.dll
 ASSEMBLY_MDB = 
 COMPILE_TARGET = library
